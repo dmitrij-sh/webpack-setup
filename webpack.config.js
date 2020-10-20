@@ -35,10 +35,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
-      // {
-      //   test: /\.hbs$/,
-      //   use: 'handlebars-loader',
-      // },
+      {
+        test: /\.hbs$/,
+        use: 'handlebars-loader',
+      },
     ],
   },
   plugins: [
