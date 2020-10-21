@@ -1,17 +1,11 @@
-html {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
 *,
 * ::before,
 * ::after {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 img,
@@ -22,12 +16,13 @@ video {
 }
 
 iframe {
-  border: 0px;
+  border: 0;
 }
 
 a {
   display: block;
   text-decoration: none;
+  /*text-transform: uppercase;*/
 }
 
 ul,
@@ -42,24 +37,24 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6[class],
 p {
   margin: 0px;
   padding: 0px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
   font-size: 100%;
-  font-weight: normal;
+  font-weight: inherit;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0px;
+  border-spacing: 0;
 }
 
 td,
 th {
-  padding: 0px;
+  padding: 0;
   text-align: left;
 }
 
@@ -67,8 +62,8 @@ input,
 button,
 select,
 textarea {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   border: none;
   font-family: inherit;
   font-size: inherit;
@@ -77,4 +72,25 @@ textarea {
 
 textarea {
   resize: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  bottom: 0px;
+  padding: 0px;
+  word-spacing: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
 }
