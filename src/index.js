@@ -1,4 +1,3 @@
-import './css/reset.css';
-import './css/styles.scss';
-import template from './templates/main.hbs';
+// import template from './templates/handlebars.hbs';
+import './styles/index.scss';
 import './js/script';

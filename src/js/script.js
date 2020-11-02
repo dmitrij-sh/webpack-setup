@@ -1,4 +1,4 @@
-function test(obj) {
+export default function test(obj) {
   console.log(obj);
 }
 

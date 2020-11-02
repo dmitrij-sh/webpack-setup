@@ -16,7 +16,7 @@ video {
 }
 
 iframe {
-  border: 0;
+  border: 0px;
 }
 
 a {
@@ -37,24 +37,24 @@ h2,
 h3,
 h4,
 h5,
-h6[class],
+h6,
 p {
   margin: 0px;
   padding: 0px;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   font-size: 100%;
   font-weight: inherit;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 0px;
 }
 
 td,
 th {
-  padding: 0;
+  padding: 0px;
   text-align: left;
 }
 
@@ -62,8 +62,8 @@ input,
 button,
 select,
 textarea {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   border: none;
   font-family: inherit;
   font-size: inherit;
@@ -80,7 +80,7 @@ input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: -1px;
   bottom: 0px;
   padding: 0px;
   word-spacing: nowrap;
@@ -93,4 +93,13 @@ input[type='radio'].visually-hidden {
   display: table;
   content: '';
   clear: both;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
