@@ -10,14 +10,14 @@ module.exports = merge(shared, {
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
     contentBase: 'paths.BUILD_DIR',
+    port: 8080,
     open: true,
     compress: true,
-    hot: true,
-    port: 8080,
+    stats: 'errors-only',
+    clientLogLevel: 'error',
     historyApiFallback: true,
     noInfo: true,
     quiet: true,
-    stats: 'errors-only',
-    clientLogLevel: 'warning',
+    hot: false,
   },
 });
